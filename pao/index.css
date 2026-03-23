@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+}
+body {
+	margin: 0;
+	padding: 0;
+    	background-color: #000000;
+	box-sizing: border-box;
+}
+
+.sometxt {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;      
+}
+
+.mydiv {
+	position: relative;
+	margin: 10% auto 0;
+	width: 70%;
+	height: 200px;
+    	background: linear-gradient(90deg, #000000, #323232); 
+}
+
+.animate-bg:before, .animate-bg:after {
+	content: '';
+	position: absolute;
+	left: -8px;
+	top: -8px;
+	background: linear-gradient(120deg, #79fb00, #8d01a0, #031ba5,#ff004c,  
+	#e6036d, #fb0094,#ff6600, #04c2e4,#adad02, #00c3ff);
+	background-size: 300%;
+	width: calc(100% + 16px);
+	height: calc(100% + 16px);
+	z-index: -1;
+	animation: BGgradient 15s ease infinite; 
+}
+
+@keyframes BGgradient {
+	0% {
+		background-position: 0% 200%;
+	}
+	50% {
+		background-position: 200% 0%;
+	}
+	100% {
+		background-position: 0% 330%;
+	}
+}
+
+.animate-bg:after {
+	filter: brightness(1.4);
+	filter: drop-shadow(16px 16px 20px rgb(248, 220, 97));
+	filter: blur(15px);
+}
+
+
+
+body{
+    background-image: linear-gradient(20deg,#000000, #65078a, #000000  );
+    background-size: 500%;
+    animation: fanimado 15s infinite;
+}
+.contenedor{
+
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+p{
+    font-size: xx-large;
+    padding: 5%;
+}
+
+button{
+   
+    padding: 100px;
+   
+    font-size: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 70px;
+}
+
+.foto{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    clip-path: path('M213.1,6.7c-32.4-14.4-73.7,0-88.1,30.6C110.6,4.9,67.5-9.5,36.9,6.7C2.8,22.9-13.4,62.4,13.5,110.9 C33.3,145.1,67.5,170.3,125,217c59.3-46.7,93.5-71.9,111.5-106.1C263.4,64.2,247.2,22.9,213.1,6.7z');
+    margin:0 
+    
+}
+
+#yesBtn{
+    transform: translate(-100%,0);
+    
+}
+
+#noBtn{
+    position: absolute;
+}
+
+@keyframes animat {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fanimado{
+    0%{
+        background-image: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+
+    
+
+
+
+    
+
+}
